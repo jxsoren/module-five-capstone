@@ -1,6 +1,1 @@
-# module5-capstone
-
-Plants don't wear pants 
-
-
-
+# Module Five Capstone
