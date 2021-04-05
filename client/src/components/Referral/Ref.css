@@ -1,0 +1,41 @@
+.ref {
+    display: flex;
+    flex-direction: column;
+}
+
+.ref h2 {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.ref h3 {
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.ref form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px
+}
+
+.ref-names {
+    height: 46px;
+    width: 370px;
+    padding: 8px 
+}
+
+.ref-email {
+    margin-top: 10px;
+    height: 46px;
+    width: 370px;
+    padding: 8px 
+}
+
+.ref-btn {
+    margin-top: 10px;
+    height: 30px;
+    width: 120px
+}

@@ -1,0 +1,32 @@
+.carousel {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+}
+
+.image-slide {
+    border-style: solid;
+    height: 400px;
+    width: 400px;
+    transition: background-image 0.5s ease-in;
+    
+}
+
+.slide-arrow {
+	cursor: pointer;
+	font-size: 2rem;
+	position: relative;
+	top: 50%;
+}
+
+.slide-arrow.right {
+	right: 3rem;
+    bottom: -10rem;
+}
+
+.slide-arrow.left {
+	left: 3rem;
+    bottom: -10rem;
+}

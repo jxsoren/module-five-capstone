@@ -1,13 +1,14 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import {PlantContext} from '../plantContext'
+import Carousel from './Carousel/Carousel'
+import Ref from './Referral/Ref'
 import './Styles/Home.css'
 
 export default function Home(props){
     const c = useContext(PlantContext)
     return(
         <div className="home">
-
             <div className="home-img-container">
                 <h1>Salt Lake City's Finest Greenery</h1>
                 <h2>"Grace Your Home With Earth's Viridescent Riches"</h2>
@@ -83,27 +84,17 @@ export default function Home(props){
         
         <hr />
 
-
         <div className="carousel-parent">
             <h1>#StaySalty #StayGreen</h1>
-            <div className="carousel">
-                <span className="carousel-img-container">
-                    <img className="carousel-img" src="https://i.pinimg.com/564x/46/c4/56/46c4565f4627d2becb6b00f9f9cbec8a.jpg" alt="carousel-img"></img>
-                </span>
-
-                <span className="carousel-img-container">
-                    <img className="carousel-img" src="https://i.pinimg.com/564x/46/c4/56/46c4565f4627d2becb6b00f9f9cbec8a.jpg" alt="carousel-img"></img>
-                </span>
-
-                <span className="carousel-img-container">
-                    <img className="carousel-img" src="https://i.pinimg.com/564x/46/c4/56/46c4565f4627d2becb6b00f9f9cbec8a.jpg" alt="carousel-img"></img>
-                </span>
-            </div>
+            <h3>Our favorite posts from our leafy enthusiast community</h3>
+            <Carousel />
         </div>
-                
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <hr />
 
+            <div className="ref-parent">
+                <Ref />
+            </div>
         </div>
     )
 }
