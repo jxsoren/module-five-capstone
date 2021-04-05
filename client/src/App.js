@@ -69,6 +69,18 @@ export default function App(){
                         <ShopList />
                     </Route>
 
+                    <Route path="/shop-greenery">
+                        {/* <ShopListGreenery /> */}
+                    </Route>
+
+                    <Route path="/shop-flowers">
+                        {/* <ShopListFlowers /> */}
+                    </Route>
+
+                    <Route path="/shop-cacti">
+                        {/* <ShopListCacti /> */}
+                    </Route>
+
                     <Route path="/details/:plantId">
                         <PlantCard />
                     </Route>

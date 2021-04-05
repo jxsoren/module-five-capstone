@@ -12,7 +12,7 @@ export default function Nav(props){
                 <h1 className="main-title">Salty Greens</h1>
             </Link>
 
-            <h3 onClick={props.toggleCart}>Cart (0)</h3>
+            <h3 className="nav-cart" onClick={props.toggleCart}>Cart (0)</h3>
         </div>
     )
 }
