@@ -3,7 +3,7 @@ import { PlantContext } from "../../plantContext"
 import PlantListDetail from "../../PlantListDetail"
 import "./ShopList.css"
 
-export default function ShopList(){
+export default function ShopList() {
     const plantDB = useContext(PlantContext)
 
     const listItem = plantDB.plantState.map((plant) => {

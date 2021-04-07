@@ -9,6 +9,7 @@ import PlantCard from './components/PlantCard'
 import Nav from './components/Nav'
 import Backdrop from './components/Backdrop/Backdrop'
 import Drawer from './components/SideDrawer/Drawer'
+import ShopListCacti from './components/shop-list/ShopListCacti'
 
 export default function App(){
     const [ drawerOpen, setDrawerOpen ] = useState(false)
@@ -78,7 +79,7 @@ export default function App(){
                     </Route>
 
                     <Route path="/shop-cacti">
-                        {/* <ShopListCacti /> */}
+                        <ShopListCacti />
                     </Route>
 
                     <Route path="/details/:plantId">
