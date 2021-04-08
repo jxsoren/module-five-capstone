@@ -11,7 +11,7 @@ export default function ShopList() {
     })
     return(
         <div>
-            <div id="shop-list-container">{listItem}</div>
+            <div className="shop-list-container">{listItem}</div>
         </div>
     )
 }
