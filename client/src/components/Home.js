@@ -25,9 +25,9 @@ export default function Home(props){
                     </span>
                 </Link>
 
-                <Link to="/shop-flowers" className="shop-link">
-                    <h3>Shop Flowers</h3>
-                    <span className="shop-link-thumbnail" id="flower-thumbnail">
+                <Link to="/shop-succulents" className="shop-link">
+                    <h3>Shop Succulents</h3>
+                    <span className="shop-link-thumbnail" id="succu-thumbnail">
                         <img src="https://media2.s-nbcnews.com/j/newscms/2019_34/1473033/the-sill_potted-plant_fiddle-leaf-fig-6_hyde_black-7_1500x-progressive_c20b660400aa6a1b24268122b9b639af.fit-720w.jpg" alt="plant-thumbnail"></img>
                     </span>
                 </Link>

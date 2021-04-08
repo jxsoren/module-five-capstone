@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { PlantContext } from "../../plantContext"
 import PlantListDetail from "../../PlantListDetail"
+import "./ShopList.css"
 
 
 export default function ShopListCacti() {
@@ -14,7 +15,7 @@ console.log(cactiFilter)
 
     return (
         <div>
-            { listItem }
+            <div className="shop-list-container">{ listItem }</div>
         </div>
     )
 }

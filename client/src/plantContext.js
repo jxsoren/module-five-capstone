@@ -18,9 +18,16 @@ const usePlantContextHook = () => {
             .catch(err => console.log(err.response.data.errMsg))
     }
 
+    const getSucculents = () => {
+        axios.get("/plants") 
+            .then(res => setPlantState(res.data))
+            .catch(err => console.log(err.response.data.errMsg))
+    }
+
     useEffect(() => {
         getPlants()
         getCacti()
+        getSucculents()
     }, [])
 
     const addPlant = (newPlant) => {
@@ -44,7 +51,8 @@ const usePlantContextHook = () => {
         plantState,
         getPlants,
         addPlant,
-        getCacti
+        getCacti,
+        getSucculents
         // cart,
         // getCartItems
     }
