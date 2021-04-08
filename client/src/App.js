@@ -11,6 +11,7 @@ import Backdrop from './components/Backdrop/Backdrop'
 import Drawer from './components/SideDrawer/Drawer'
 import ShopListCacti from './components/shop-list/ShopListCacti'
 import ShopListSucculents from './components/shop-list/ShopListSucculents'
+import ShopListGreenery from './components/shop-list/ShopListGreenery'
 
 export default function App(){
     const [ drawerOpen, setDrawerOpen ] = useState(false)
@@ -72,7 +73,7 @@ export default function App(){
                     </Route>
 
                     <Route path="/shop-greenery">
-                        {/* <ShopListGreenery /> */}
+                        <ShopListGreenery />
                     </Route>
 
                     <Route path="/shop-succulents">
