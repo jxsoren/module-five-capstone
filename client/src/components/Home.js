@@ -18,21 +18,21 @@ export default function Home(props){
         <hr />
 
             <div className="shop-link-container">
-                <Link to="/shop-greenery" className="shop-link">
+                <Link to="/shopList/house-plant" className="shop-link">
                     <h3>Shop Greenery</h3>
                     <span className="shop-link-thumbnail" id="greenery-thumbnail">
                         <img src="https://media2.s-nbcnews.com/j/newscms/2019_34/1473033/the-sill_potted-plant_fiddle-leaf-fig-6_hyde_black-7_1500x-progressive_c20b660400aa6a1b24268122b9b639af.fit-720w.jpg" alt="plant-thumbnail"></img>
                     </span>
                 </Link>
 
-                <Link to="/shop-succulents" className="shop-link">
+                <Link to="/shopList/succulent" className="shop-link">
                     <h3>Shop Succulents</h3>
                     <span className="shop-link-thumbnail" id="succu-thumbnail">
                         <img src="https://media2.s-nbcnews.com/j/newscms/2019_34/1473033/the-sill_potted-plant_fiddle-leaf-fig-6_hyde_black-7_1500x-progressive_c20b660400aa6a1b24268122b9b639af.fit-720w.jpg" alt="plant-thumbnail"></img>
                     </span>
                 </Link>
 
-                <Link to="/shop-cacti" className="shop-link">
+                <Link to="shopList/cactus" className="shop-link">
                     <h3>Shop Cacti</h3>
                     <span className="shop-link-thumbnail" id="cacti-thumbnail">
                         <img src="https://media2.s-nbcnews.com/j/newscms/2019_34/1473033/the-sill_potted-plant_fiddle-leaf-fig-6_hyde_black-7_1500x-progressive_c20b660400aa6a1b24268122b9b639af.fit-720w.jpg" alt="plant-thumbnail"></img>

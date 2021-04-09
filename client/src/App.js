@@ -9,8 +9,6 @@ import PlantCard from './components/PlantCard'
 import Nav from './components/Nav'
 import Backdrop from './components/Backdrop/Backdrop'
 import Drawer from './components/SideDrawer/Drawer'
-import ShopListCacti from './components/shop-list/ShopListCacti'
-import ShopListSucculents from './components/shop-list/ShopListSucculents'
 
 export default function App(){
     const [ drawerOpen, setDrawerOpen ] = useState(false)
@@ -67,20 +65,8 @@ export default function App(){
                         <Home />
                     </Route>
 
-                    <Route path="/shopList">
+                    <Route path="/shopList/:plantType">
                         <ShopList />
-                    </Route>
-
-                    <Route path="/shop-greenery">
-                        {/* <ShopListGreenery /> */}
-                    </Route>
-
-                    <Route path="/shop-succulents">
-                        <ShopListSucculents />
-                    </Route>
-
-                    <Route path="/shop-cacti">
-                        <ShopListCacti />
                     </Route>
 
                     <Route path="/details/:plantId">

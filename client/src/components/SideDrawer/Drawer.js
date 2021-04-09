@@ -15,7 +15,7 @@ export default function Drawer(props){
                 </li>
 
                 <li>
-                    <Link to='/shopList' activeclassname="nav-shopList-active" className="nav-list-item">Shop The Store</Link>
+                    <Link to='/shopList/all' activeclassname="nav-shopList-active" className="nav-list-item">Shop The Store</Link>
                 </li>
             </ul>
         </div>
