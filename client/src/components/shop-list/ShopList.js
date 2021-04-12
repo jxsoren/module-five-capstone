@@ -11,7 +11,7 @@ export default function ShopList() {
     
     const plantFilter = plantType === "all" ? 
     plantDB.plantState : 
-    plantDB.plantState.filter((plant) => plant.plant_type.toLowerCase() === plantType);
+    plantDB.plantState.filter((plant) => plant.plant_type.toLowerCase() === plantType)
 
     const listItem = plantFilter.map((plant) => {
         return <PlantListDetail key={plant.id} plant={plant}/>

@@ -12,22 +12,23 @@ const usePlantContextHook = () => {
             .catch(err => console.log(err.response.data.errMsg))
     }
 
-    const getCacti = () => {
-        axios.get("/plants") 
-            .then(res => setPlantState(res.data))
-            .catch(err => console.log(err.response.data.errMsg))
-    }
+    // const getCacti = () => {
+    //     axios.get("/plants") 
+    //         .then(res => setPlantState(res.data))
+    //         .catch(err => console.log(err.response.data.errMsg))
+    // }
 
-    const getSucculents = () => {
-        axios.get("/plants") 
-            .then(res => setPlantState(res.data))
-            .catch(err => console.log(err.response.data.errMsg))
-    }
+    // const getSucculents = () => {
+    //     axios.get("/plants") 
+    //         .then(res => setPlantState(res.data))
+    //         .catch(err => console.log(err.response.data.errMsg))
+    // }
+//do I need a get one?  are these "gets even working? confused  took cacti off- stil works
 
     useEffect(() => {
         getPlants()
-        getCacti()
-        getSucculents()
+        // getCacti()
+        // getSucculents()
     }, [])
 
     const addPlant = (newPlant) => {
@@ -37,7 +38,7 @@ const usePlantContextHook = () => {
         })
         .catch(err => console.log(err.response.data.errMsg))
     }
-    // IF NO EDIT- git checkout main 1st(already pushed 'upstream') //
+
 
 // add more requests here //
     // const [ cart, setCart ] = useState([])
@@ -51,8 +52,8 @@ const usePlantContextHook = () => {
         plantState,
         getPlants,
         addPlant,
-        getCacti,
-        getSucculents
+        // getCacti,
+        // getSucculents
         // cart,
         // getCartItems
     }
